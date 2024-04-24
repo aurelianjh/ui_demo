@@ -4,6 +4,11 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+p {
+    color: #444b7c;
+    font-size: 14px;
+}
+
 .container {
     width: 80%;
     margin: 20px auto;
@@ -14,6 +19,12 @@ body, html {
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    background-color: #e4e9f0;
+    border: 1px solid #943c8c;
+}
+
+#inputBox::placeholder {
+    color: #943c8c;
 }
 
 table {
@@ -23,6 +34,7 @@ table {
 
 table, th, td {
     border: 1px solid #ccc;
+    border: 1px solid #943c8c;
 }
 
 th, td {
@@ -31,12 +43,16 @@ th, td {
 }
 
 th {
-    background-color: #f4f4f4;
+    background-color: #e95edc;
+    color: #ffffff;
 }
 
 button {
     padding: 5px 10px;
     cursor: pointer;
+    background-color: #449cd4;
+    color: #ffffff;
+    border-color: #1e8bc1
 }
 
 .dragging {

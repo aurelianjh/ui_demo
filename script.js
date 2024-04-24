@@ -17,7 +17,18 @@ document.getElementById('inputBox').addEventListener('keydown', function(event) 
 function transferText() {
     updateTable();
     document.getElementById('inputBox').value = ''; // Clear the input box after transferring
+    
+    // Show the image
+    let flashImage = document.getElementById('flashImage');
+    flashImage.style.display = 'block';
+    
+    // Hide the image after 100 milliseconds (2 seconds)
+    setTimeout(function() {
+        flashImage.style.display = 'none';
+    }, 100);
 }
+
+
 
 function updateTable() {
     let inputBox = document.getElementById('inputBox');

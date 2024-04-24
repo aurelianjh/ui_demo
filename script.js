@@ -8,6 +8,12 @@ document.getElementById('inputBox').addEventListener('input', function() {
     updateTable();
 });
 
+document.getElementById('inputBox').addEventListener('keydown', function(event) {
+    if (event.key.length === 1) {
+        showTableHeaders();
+    }
+});
+
 function transferText() {
     updateTable();
     document.getElementById('inputBox').value = ''; // Clear the input box after transferring
@@ -154,4 +160,8 @@ function moveTextBoxBelowTable() {
     let inputContainer = document.getElementById('inputContainer');
     let recipeTable = document.getElementById('recipeTable');
     recipeTable.parentNode.insertBefore(inputContainer, recipeTable.nextSibling);
+}
+
+function showTableHeaders() {
+    document.getElementById('recipeTable').classList.remove('hidden');
 }

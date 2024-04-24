@@ -44,3 +44,7 @@ button {
     border: 1px solid #dee2e6; /* Slightly darker border */
     opacity: 0.75; /* Slightly transparent to distinguish it */
 }
+
+.hidden {
+    display: none;
+}

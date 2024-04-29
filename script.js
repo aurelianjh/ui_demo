@@ -17,7 +17,8 @@ document.getElementById('inputBox').addEventListener('keydown', function(event) 
 function transferText() {
     updateTable();
     document.getElementById('inputBox').value = ''; // Clear the input box after transferring
-    
+
+    /*
     // Show the image
     let flashImage = document.getElementById('flashImage');
     flashImage.style.display = 'block';
@@ -26,6 +27,7 @@ function transferText() {
     setTimeout(function() {
         flashImage.style.display = 'none';
     }, 100);
+    */
 }
 
 
